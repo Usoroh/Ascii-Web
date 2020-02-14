@@ -1,0 +1,43 @@
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="public/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Ascii-web</title>
+    
+</head>
+<body>
+
+<div class="ascii-wrapper">
+
+<form method="POST"  action="/">
+
+     <textarea placeholder="enter some text" class="ascii-textarea" autofocus required  cols="40" rows="1" name="input" ></textarea>    <br/>      
+ <div class="ascii-wrapper-elems"> 
+ <label class="label" for="fonts">fonts:</label>
+<select class="ascii-select"  name="fonts" >
+ 
+
+    <option   value="standard"  > Standard</option>
+    <option value="thinkertoy">Thinkertoy</option>
+    <option value="shadow"> Shadow</option>
+</select>
+
+<input id="btn-submit" class="ascii-btn" type="submit" value="go!"/>
+</div>
+</form>
+</div>
+
+{{/* document.getElementById('btn-submit').play(); */}}
+
+<div  class="ascii-result">
+    <pre >{{.}}</pre>
+</div>
+</body>
+</html> 
+{{/* add transform trasnlate
+add click - music
+bg - phone */}}

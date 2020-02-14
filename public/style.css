@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.ascii-wrapper {
+    font-family: 'Montserrat', sans-serif;
+   position: absolute;
+   top:-40px;
+   left: -5px;;
+   background: #000;   
+   color: #fff;
+   border-radius: 10px;
+    min-width: 30%;
+    margin-top: 100px;
+    transform: skew(-26deg, 10deg);
+display: flex;
+align-items: center;
+justify-content: space-around;
+min-height: 300px;
+box-shadow: 2px 5px 10px #000;
+transition: 2s;
+}
+
+.ascii-wrapper:hover {
+
+transition: 2s;
+}
+.ascii-textarea {
+    background: #000;
+    font-size: 14px;
+    color: rgb(152, 233, 31);
+    border:none;
+padding: 0 10px;
+border-bottom: .5px solid rgb(152, 233, 31);
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+       /* Add custom arrow */
+ }
+
+.ascii-select {
+    
+padding: 5px 10px;
+    margin-top: 40px;
+    margin-left: 5px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+
+}
+
+.label {
+    color: rgb(89, 131, 26);
+    transform: translate3d(12px, 10%, 1em);
+}
+.ascii-btn {
+    font-size: 14px;
+    margin-left: 3.5vw;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    transition:  1s;
+}
+
+.ascii-btn:hover {
+    cursor: pointer;
+    transform: scale(3, 4);
+    transform: rotate(30deg);
+    transition:  1s;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+.ascii-result {
+    position: absolute;
+  
+    text-align: center;
+max-width: 30%;
+min-height: 300px;
+
+background: #000;   
+color: #fff;
+font-size: 14px;
+border-radius: 10px;
+box-shadow: 2px 5px 10px #000;
+display: flex;
+align-items: center;
+transform: scale3d(1.3, 1.3, 1.3);
+/* transform: rotate(20deg); */
+justify-content: center;
+bottom: 200px;
+right: 200px;
+transition: 2s;
+transform: skew(20deg, -10deg);
+overflow-inline: visible;
+}
+.ascii-result pre{
+ 
+border-bottom: 1px solid #fff;
+}
+.ascii-result pre:hover{
+border-bottom: 1px solid #000;
+}
+.ascii-result:hover{
+    transform: rotate(360deg);
+    background: #fff;
+    transition: 1000s;
+    color: #000;
+    cursor: pointer;
+ transition: 2s;
+}
+.ascii-wrapper-elems {
+border-bottom: .5px solid rgb(152, 233, 31);
+padding-left: 10px;
+padding-bottom: 10px;
+
+}
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 100px;;
+    color: red;
+}
